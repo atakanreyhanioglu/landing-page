@@ -1,0 +1,125 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+}
+/* Apply font to header */
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: #f6f6f6;
+}
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+}
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 12px;
+}
+.video {
+    width: 600px;
+    height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.video iframe {
+    width: 600px;
+    height: 400px;
+    border: solid 2px black;
+
+    border-radius: 8px;
+
+}
+.description {
+    font-weight: 400;
+    text-align: center;
+    padding: 0 -4px;
+    font-size: 24px;
+}
+.section-description {
+    padding: 12px;
+    max-width: 700px;
+}
+
+.developer-job-btn {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 2px solid #FF3131;
+    font-size: 24px;
+    padding: 10px 16px;
+    background: #FF3131;
+    border-radius: 8px;
+    margin-top: 10px;
+
+    transition: ease-in-out 0.25s;
+
+    -webkit-box-shadow: -1px 9px 12px -1px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 9px 12px -1px rgba(0,0,0,0.15);
+    box-shadow: -1px 9px 12px -1px rgba(0,0,0,0.15);
+
+}
+.developer-job-btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.25s;
+}
+
+
+/* Responsive styles for header */
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 24px;
+        width: 354px;
+    }
+    .text {
+        font-size: 14px;
+    }
+
+    .video {
+        width: 320px;
+        height: 220px;
+    }
+    .video iframe {
+        width:  320px;
+        height: 180px;
+        border: solid 2px black;
+
+        border-radius: 8px;
+
+    }
+    .description {
+        font-weight: 400;
+        text-align: center;
+        padding: 0 -4px;
+        font-size: 14px;
+    }
+    .section-description {
+        padding: 12px;
+    }
+}
